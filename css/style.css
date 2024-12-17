@@ -1,0 +1,142 @@
+
+body {
+  background-color: rgb(247, 236, 222);
+}
+main {
+  height: 100vh;
+}
+
+*::selection {
+  background-color: #fec260;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 500;
+  padding: 8px 0px;
+  position: relative;
+}
+
+main h1::after {
+  content: "";
+  width: 100%;
+  left: 0;
+  bottom: 10px;
+  background-color: #fec260;
+  transition: height 350ms;
+  height: 25%;
+  position: absolute;
+  z-index: -1;
+}
+
+main h1:hover::after {
+  height: 50%;
+}
+
+/* Subsection Styles */
+.sub {
+  border-width: 2px 0 2px 0;
+  border-style: dotted;
+  border-color: #352e28;
+}
+
+.sub h2 {
+  font-family: "Righteous", sans-serif;
+  font-size: 25px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sub h2::selection {
+  background-color: #fec260;
+  color: transparent;
+}
+
+/* Button Styles */
+.btn-submit {
+  --bs-btn-color: #fff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-bg: #d1512d;
+  --bs-btn-border-color: #d1512d;
+  --bs-btn-hover-bg: #bb4120;
+  --bs-btn-hover-border-color: #a03315;
+}
+
+.form-control:focus {
+  border-color: #d99c39;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+/* Visit Button */
+.btn.btn-visit {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #9eb23b;
+  --bs-btn-border-color: #9eb23b;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #8a9e23;
+  --bs-btn-hover-border-color: #6e8018;
+}
+
+/* Delete Button */
+.btn-delete {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #eb1d36;
+  --bs-btn-border-color: #eb1d36;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #d30820;
+  --bs-btn-hover-border-color: #ba081d;
+}
+
+/* Error and Success Input Styles */
+.input-error:focus {
+  border: .5px solid red !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 0, 0, 0.3) !important;
+}
+
+.input-success:focus {
+  border: .5px solid green !important;
+  box-shadow: 0 0 0 0.25rem rgba(0, 128, 0, 0.3) !important;
+}
+
+.input-error {
+  border: .5px solid red !important;
+  background-image: url('../wrong.svg');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+  outline: none !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 0, 0, 0.2) !important;
+}
+
+.input-success {
+  border: .5px solid rgb(0, 98, 0) !important;
+  background-image: url('../right.svg');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+  outline: none !important;
+  box-shadow: 0 0 0 0.25rem rgba(0, 128, 0, 0.2) !important;
+}
+
+input:focus {
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+  

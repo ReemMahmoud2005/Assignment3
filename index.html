@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book marker</title>
+    <link rel="icon" href="./icon-bookmark.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
+
+  
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+   <link rel="stylesheet" href="./css/all.min.css">
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="py-5 position-relative" >
+
+       <div class="home d-flex justify-content-center align-items-center container flex-column ">  
+    <h1 class="py-2" >Bookmarker</h1>
+    
+    
+    <div class="sub d-flex  flex-column container p-3 py-4 mt-5 ">
+        
+
+        <h2 class="text-center bg-danger align-baseline"><i class="fa-solid fa-bookmark me-1" style="color: #41A55B;"></i>Bookmark your favorite sites <i class="fa-solid fa-bookmark" style="color: #B2AB49;"></i></h2>
+        
+        <div class="input1 py-3">  <label for="name" class="pb-1 fw-bold "><i class="fa-solid fa-book-bookmark me-2"></i>Site Name</label>
+        <input type="text" placeholder="Book Mark Name" id="name" value="" class="form-control"></div>
+
+
+        <div class="input2 pb-4">  <label for="url" class="pb-1 fw-bold "><i class="fa-solid fa-link me-2"></i>Site URL</label>
+            <input type="url" placeholder="Website URL" id="url" class="form-control"></div>
+            
+            
+            <div class="input3 pb-4">  <label for="search"  class="pb-1 fw-bold "><i class="fa-solid fa-magnifying-glass me-2"></i>Search</label>
+                    <input type="text" placeholder="search" onkeyup="search(this.value )" id="search" class="form-control"></div>
+            <div class="submit text-center">  <button class="btn btn-submit px-5" onclick="add_new_product()">Submit</button></div>
+         
+      
+    </div> <table class="table bg-light text-center mt-4 ">
+        <thead>
+            <tr >
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </tr>
+            
+            <tbody id="tr"><tr id="tr" >
+            </tbody>
+            
+
+
+
+            
+        </thead>
+
+           
+    </table></div>
+  
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+   
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book marker</title>
+    <link rel="icon" href="./icon-bookmark.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="py-5 position-relative">
+       <div class="home d-flex justify-content-center align-items-center container flex-column">
+        <h1 class="py-2">Bookmarker</h1>
+        <div class="sub d-flex flex-column container p-3 py-4 mt-5">
+            <h2 class="text-center bg-danger align-baseline">
+                <i class="fa-solid fa-bookmark me-1" style="color: #41A55B;"></i>Bookmark your favorite sites <i class="fa-solid fa-bookmark" style="color: #B2AB49;"></i>
+            </h2>
+            
+            <div class="input1 py-3">
+                <label for="name" class="pb-2 fw-bold"><i class="fa-solid fa-book-bookmark me-2"></i>Site Name</label>
+                <input type="text" placeholder="Book Mark Name" id="name" value="" class="form-control">
+            </div>
+
+            <div class="input2 pb-4">
+                <label for="url" class="pb-2 fw-bold"><i class="fa-solid fa-link me-2"></i>Site URL</label>
+                <input type="url" placeholder="Website URL" id="url" class="form-control">
+            </div>
+
+            <div class="submit text-center">
+                <button class="btn btn-submit px-5" onclick="add_new_product()">Submit</button>
+            </div>
+        </div>
+
+        <table class="table bg-light text-center mt-4">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tr"></tbody>
+        </table>
+       </div>
+    </main>
+
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html> -->
